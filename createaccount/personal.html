@@ -22,12 +22,80 @@
     </header>
 
     <div class="container form-wrapper">
-      <form class="create-info-wrapper">
+      <form id="personal-account" class="create-info-wrapper">
         <div class="step step-1 active">
-          <!-- below div ends step-1 -->
+          <div class="row">
+            <div class="container">
+              <h5>Please download, fill and upload form below</h5>
+            </div>
+            <div class="col-sm-12 col-lg-4">
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label"
+                  >Email address</label
+                >
+                <input
+                  type="email"
+                  name="email"
+                  class="form-control"
+                  placeholder="Johndoe@email.come"
+                  id="exampleInputEmail1"
+                  aria-describedby="emailHelp"
+                />
+              </div>
+            </div>
+            <div class="col-sm-12 col-lg-4">
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label"
+                  >Full name</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Lastname Firstname"
+                  id="name"
+                  name="name"
+                  aria-describedby="user name"
+                />
+              </div>
+            </div>
+            <div class="col-sm-12 col-lg-4">
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label"
+                  >phone number</label
+                >
+                <input
+                  type="tel"
+                  class="form-control"
+                  placeholder=""
+                  id="phone"
+                  name="tel"
+                  aria-describedby="telephone number"
+                />
+              </div>
+            </div>
+            <div class="col-sm-12 col-lg-6">
+              <div class="btn btn-primary">download form</div>
+            </div>
+            <div class="col-sm-12 col-lg-6">
+              <div class="">
+                <input
+                  class="form-control"
+                  name="personalFile"
+                  type="file"
+                  id="PersonalFormFile"
+                />
+              </div>
+            </div>
+          </div>
           <div class="row mulstep-btn-cont">
             <!-- <div class="btn btn-left btn-prev">Previous</div> -->
-            <div class="btn btn-danger btn-right btn-submit">Submit</div>
+            <div
+              type="submit"
+              id="submit-personal"
+              class="btn btn-danger btn-right btn-submit"
+            >
+              Submit
+            </div>
           </div>
         </div>
       </form>
@@ -42,7 +110,7 @@
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/9.15.0/firebase.js"></script> -->
     <!-- <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script> -->
-    <script src="./forms.js"></script>
-    <script src="../bundle.js"></script>
+    <!-- <script src="./forms.js"></script> -->
+    <script src="./bundle.js"></script>
   </body>
 </html>
