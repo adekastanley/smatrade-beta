@@ -58,9 +58,9 @@ body {
     font-weight: bold;
   }
   .about-section-2 p {
-    width: 40%;
+    width: 60%;
     text-align: start;
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 300;
     color: black;
   }
@@ -191,7 +191,7 @@ body {
     font-size: 10px;
   }
   .about-section-2 {
-    height: 25rem;
+    height: 40rem;
   }
   .about-section-2 h3 {
     font-size: 300%;
