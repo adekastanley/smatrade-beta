@@ -147,19 +147,18 @@
               </div>
               <div class="mb-3">
                 <textarea
-                  name=""
-                  id=""
-                  cols="30"
-                  rows="5"
+                  class="form-control"
+                  aria-label="With textarea"
                   name="note"
-                  class="form-control input-goup-text text-dark"
-                  placeholder="Enter message"
                   id="formtext"
-                >
-                </textarea>
+                  placeholder="Your message"
+                  rows="5"
+                ></textarea>
               </div>
 
-              <button type="submit" class="btn btn-danger px-5">send</button>
+              <button type="submit" name="btn" class="btn btn-danger px-5">
+                send
+              </button>
             </form>
           </div>
           <div class="container market-form-imgage-container col-sm-6">
@@ -246,7 +245,7 @@
       crossorigin="anonymous"
     ></script>
     <script src="../main.js"></script>
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="../functionality.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
   </body>
 </html>
