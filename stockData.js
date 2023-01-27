@@ -11,7 +11,7 @@ let teslaPrice = document.querySelector('.tesla-price')
         
 const getStockPrice = async (stock) => {
 
-    const response = await fetch( ' https://api.twelvedata.com/price?symbol='+ stock +'&apikey=9039772849a1495c9b8562f22d9f459a')
+    const response = await fetch( ' https://api.twelvedata.com/price?symbol='+ stock +'&apikey=3d71bc52c2ef4c94bb70b0f00817ffb9')
     const data = await response.json()
     return data
 } 
@@ -19,7 +19,7 @@ const getStockPrice = async (stock) => {
 getStockPrice(['META', 'GOOG','MSFT','NKE','TSLA','ADS']).then(
     data => {
 
-        // console.log(data['META'].price )
+        // console.log(data['META'])
         metaPrice.textContent =  '$' + data['META'].price 
         googlePrice.textContent =  '$' + data['GOOG'].price 
         microsoftPrice.textContent = '$' + data['MSFT'].price 
