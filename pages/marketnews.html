@@ -108,19 +108,26 @@
       >
         <div class="row container-fluid">
           <div class="container market-form-container py-2 col-sm-6">
+            <h3>Contact us</h3>
+            <p class="text-dark">
+              Get in touch with us for your enquiries, suggestions, complaints,
+              queries or messages
+            </p>
             <form class="market-form">
               <div class="mb-3">
                 <input
                   placeholder="Your name"
+                  name="name"
                   type="text"
                   class="form-control"
                   id="inputname"
-                  aria-describedby="emailHelp"
+                  aria-describedby="nameHelp"
                 />
               </div>
               <div class="mb-3">
                 <input
                   placeholder="Your email"
+                  name="email"
                   type="email"
                   class="form-control"
                   id="inputemail"
@@ -131,6 +138,7 @@
                 <input
                   placeholder="Your phone number"
                   type="tel"
+                  name="phonenumber"
                   class="form-control"
                   id="inputphonenummber"
                 />
@@ -140,7 +148,8 @@
                   name=""
                   id=""
                   cols="30"
-                  rows="10"
+                  rows="5"
+                  name="note"
                   class="form-control input-goup-text text-dark"
                   placeholder="Enter message"
                   id="formtext"
@@ -235,5 +244,6 @@
       crossorigin="anonymous"
     ></script>
     <script src="../main.js"></script>
+    <script src="../functionality.js"></script>
   </body>
 </html>
