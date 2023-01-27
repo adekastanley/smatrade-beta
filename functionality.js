@@ -1,7 +1,7 @@
 const contactUS = document.querySelector('.market-form')
 // console.log(contactUS.btn)
 
-contactUS.addEventListener('click', (e)=> {
+contactUS.addEventListener('submit', (e)=> {
     e.preventDefault()
     const name = contactUS.name.value
     const email = contactUS.email.value
@@ -16,8 +16,13 @@ Email.send({
     To : 'Smatradeng@gmail.com',
     From : "Smatradeng@gmail.com",
     Subject : "New Contact Request",
-    Body : `name ${name} ${email} phone number ${phoneNumber} message: ${message}  `  
+    Body : `email from: ${name} with address: ${email} and  phone number: ${phoneNumber}. message: ${message}  `  
 }).then(
-  message => console.log(message)
+   
+  message => {
+    console.log(message)
+    contactUS.reset()
+}
+
 );
 })
