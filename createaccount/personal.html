@@ -90,12 +90,13 @@
                   <option selected>select Title</option>
                   <option value="mr">mr</option>
                   <option value="mrs">Mrs</option>
+                  <option value="ms">Ms</option>
                 </select>
               </div>
 
               <div class="form-group col-lg-3">
                 <label for="date of birth" class="form-label"
-                  >date of birth</label
+                  >Date of birth</label
                 >
                 <input id="dob" name="dob" class="form-control" type="date" />
               </div>
@@ -104,50 +105,13 @@
 
             <div class="field-wrapper row row-3">
               <div class="from-group col-lg-6">
-                <select
-                  class="form-control"
+                <input
+                  type="text"
                   id="sor"
-                  aria-label="Default select title"
-                >
-                  <option selected>state of origin</option>
-                  <option value="Abia">Abia</option>
-                  <option value="Adamawa">Adamawa</option>
-                  <option value="Akwa Ibom">Akwa Ibom</option>
-                  <option value="Anambra">Anambra</option>
-                  <option value="Bauchi">Bauchi</option>
-                  <option value="Benue">Benue</option>
-                  <option value="Borno">Borno</option>
-                  <option value="Cross River">Cross River</option>
-                  <option value="Delta">Delta</option>
-                  <option value="Ebonyi">Ebonyi</option>
-                  <option value="Edo">Edo</option>
-                  <option value="Ekiti">Ekiti</option>
-                  <option value="Enugu">Enugu</option>
-                  <option value="fct">Fct</option>
-                  <option value="Gombe">Gombe</option>
-                  <option value="Imo">Imo</option>
-                  <option value="Jigawa">Jigawa</option>
-                  <option value="Kaduna">Kaduna</option>
-                  <option value="Kano">Kano</option>
-                  <option value="Katsina">Katsina</option>
-                  <option value="Kebbi">Kebbi</option>
-                  <option value="Kogi">Kogi</option>
-                  <option value="Kwara">Kwara</option>
-                  <option value="Lagos">Lagos</option>
-                  <option value="Nasarawa">Nasarawa</option>
-                  <option value="Niger">Niger</option>
-                  <option value="Ogun">Ogun</option>
-                  <option value="Ondo">Ondo</option>
-                  <option value="Osun">Osun</option>
-                  <option value="Oyo">Oyo</option>
-                  <option value="Plateau">Plateau</option>
-                  <option value="Rivers">Rivers</option>
-                  <option value="Sokoto">Sokoto</option>
-                  <option value="Taraba">Taraba</option>
-                  <option value="Yobe">Yobe</option>
-                  <option value="Zamfara">Zamfara</option>
-                  <option value="Kebbi">Kebbi</option>
-                </select>
+                  class="form-control"
+                  name="stateOfOrigin"
+                  placeholder="State of origin"
+                />
               </div>
 
               <div class="form-group col-lg-6">
@@ -165,16 +129,13 @@
             <div class="field-wrapper row row-4">
               <!-- this is used to help with the placement of fields -->
               <div class="form-group col-lg-6">
-                <select
-                  class="form-control"
+                <input
+                  type="text"
                   id="nationality"
                   name="nationality"
-                  aria-label="Default select nationality"
-                >
-                  <option selected>nationality</option>
-                  <option value="Nigeria">nigeria</option>
-                  <option value="Ghana">ghana</option>
-                </select>
+                  class="form-control"
+                  placeholder="Nationality"
+                />
               </div>
               <div class="col-lg-6"></div>
             </div>
@@ -189,9 +150,12 @@
                   name="idType"
                   aria-label="Default select id type"
                 >
-                  <option selected>id type</option>
-                  <option value="drivers">drivers lincence</option>
-                  <option value="voter">voter card</option>
+                  <option selected>Id type</option>
+                  <option value="driver lincence">Criver lincence</option>
+                  <option value="voter card">Voter card</option>
+                  <option value="International Passport">
+                    International Passport
+                  </option>
                 </select>
               </div>
               <div class="form-group col-lg-6">
@@ -222,7 +186,7 @@
               </div>
               <div class="col-lg-3 form-group">
                 <label for="exampleInputPassword1" class="form-label"
-                  >expirey date</label
+                  >expiration date</label
                 >
                 <input
                   id="id-expiry"
@@ -275,16 +239,13 @@
             <div class="field-wrapper row row-9">
               <!-- this is used to help with the placement of fields -->
               <div class="form-group col-lg-4">
-                <select
-                  class="form-control"
+                <input
+                  type="text"
                   id="occupation"
                   name="occupation"
-                  aria-label="Default select occupation"
-                >
-                  <option selected>occupation</option>
-                  <option value="driver">driver</option>
-                  <option value="pilot">pilot</option>
-                </select>
+                  class="form-control"
+                  placeholder="occupation"
+                />
               </div>
               <div class="col-lg-2"></div>
               <div class="col-lg-6"></div>
@@ -353,17 +314,14 @@
             <div class="field-wrapper row row-13">
               <!-- this is used to help with the placement of fields -->
               <div class="form-group col-lg-3">
-                <select
-                  class="form-control"
+                <input
+                  type="text"
                   id="bankname"
-                  aria-label="Default select occupation"
                   name="bankName"
-                >
-                  <option selected>select bank</option>
-                  <option value="gtb">GT bank</option>
-                  <option value="wema">Wema bank</option>
-                  <option value="access">Access bank</option>
-                </select>
+                  name="occupation"
+                  class="form-control"
+                  placeholder="Name of bank"
+                />
               </div>
               <div class="col-lg-3"></div>
               <div class="col-lg-6"></div>
