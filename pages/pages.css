@@ -19,7 +19,6 @@ body {
   }
   header {
     height: 30rem;
-
     position: relative;
   }
 
@@ -42,6 +41,9 @@ body {
   /* section 2 view for desktop  */
   .about-header {
     padding: 12rem;
+  }
+  .about-header .grand-text {
+    font-size: 3rem;
   }
   .image-container {
     width: 30rem;
