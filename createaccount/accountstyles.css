@@ -128,9 +128,9 @@ header .resource-logo-container .mainlogo {
 .card-wrapper:hover {
   background-color: #d7d7d7;
 }
-.create-info-wrapper .row .create-info-wrapper {
-  /* margin: 2rem; */
-}
+/* .create-info-wrapper .row .create-info-wrapper {
+  margin: 2rem;
+} */
 .card-wrapper h3 {
   font-size: 100%;
 }
@@ -154,8 +154,8 @@ header .resource-logo-container .mainlogo {
 
 /* multi step styles */
 
-.mulstep-btn-cont {
-}
+/* .mulstep-btn-cont {
+} */
 .mulstep-btn-cont .btn {
   color: #f2f2f2;
 }

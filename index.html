@@ -251,10 +251,11 @@
 
         <div class="col-sm-12 col-lg-6 py-5 px-5">
           <h3 class="display-3">Start Trading Now:</h3>
-          <form class="">
+          <form id="startTradingForm" class="">
             <div class="mb-3">
               <input
                 placeholder="Your name"
+                name="name"
                 type="text"
                 class="form-control"
                 id="inputname"
@@ -264,6 +265,7 @@
             <div class="mb-3">
               <input
                 placeholder="Your email"
+                name="email"
                 type="email"
                 class="form-control"
                 id="inputemail"
@@ -273,13 +275,16 @@
             <div class="mb-3">
               <input
                 placeholder="Your phone number"
+                name="number"
                 type="tel"
                 class="form-control"
                 id="inputphonenummber"
               />
             </div>
 
-            <button type="submit" class="btn btn-danger">Submit</button>
+            <button id="submit-btn" type="submit" class="btn btn-danger">
+              Submit
+            </button>
           </form>
         </div>
       </div>
@@ -373,7 +378,7 @@
       crossorigin="anonymous"
     ></script>
     <script src="./main.js"></script>
-    <!-- <script src="./stockData.js"></script> -->
+    <script src="./stockData.js"></script>
     <script src="./animations.js"></script>
     <script src="./createaccount/bundle.js"></script>
   </body>
