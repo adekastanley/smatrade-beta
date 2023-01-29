@@ -95,7 +95,7 @@
   );
 }
 .logo {
-  width: 20%;
+  /* width: 20%; */
   position: absolute;
   top: 1.2rem;
 }
@@ -121,6 +121,10 @@
   /* .topmost {
     height: 40rem;
   } */
+
+  .logo {
+    width: 20%;
+  }
   .section-3 {
     padding: 0 15rem;
   }
@@ -143,6 +147,9 @@
 
 /* tablet */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .logo {
+    width: 30%;
+  }
   .top-section {
     padding: 2rem;
   }
@@ -212,6 +219,9 @@
 /* below style for mobile    */
 
 @media only screen and (max-device-width: 768px) {
+  .logo {
+    width: 40%;
+  }
   .clock-img {
     display: none;
   }
