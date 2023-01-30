@@ -7,20 +7,24 @@ const form = document.querySelector( 'form');
 
 btnNext.forEach( button => {
     button.addEventListener ('click', (e)=> {
+        e.preventDefault()
         changeStep('next')
     })
 })
 btnPrev.forEach( button => {
     button.addEventListener ('click', (e)=> {
+        e.preventDefault()
         changeStep('prev')
     })
 })
 
 function changeStep(btn){
+
     let index = 0;
     const active = document.querySelector( '.step.active');
     index =steps.indexOf(active);
     steps[index].classList.remove('active');
+    console.log(btn)
 
     if (btn === 'next'){
         index ++
