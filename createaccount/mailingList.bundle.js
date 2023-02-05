@@ -50,13 +50,13 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 /***/ }),
 
-/***/ "./src/js/estate.js":
-/*!**************************!*\
-  !*** ./src/js/estate.js ***!
-  \**************************/
+/***/ "./src/js/mailingList.js":
+/*!*******************************!*\
+  !*** ./src/js/mailingList.js ***!
+  \*******************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var firebase_app__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! firebase/app */ \"./node_modules/firebase/app/dist/esm/index.esm.js\");\n/* harmony import */ var firebase_firestore__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! firebase/firestore */ \"./node_modules/firebase/firestore/dist/esm/index.esm.js\");\n/* harmony import */ var firebase_storage__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! firebase/storage */ \"./node_modules/firebase/storage/dist/esm/index.esm.js\");\n\r\n\r\n\r\n\r\n\r\nconst firebaseConfig = {\r\n    apiKey: \"AIzaSyDXWNrFVg08GICClhqHiA69P2zPD1-4tKo\",\r\n    authDomain: \"smatrade-db.firebaseapp.com\",\r\n    projectId: \"smatrade-db\",\r\n    storageBucket: \"smatrade-db.appspot.com\",\r\n    messagingSenderId: \"650758148477\",\r\n    appId: \"1:650758148477:web:046c0579db78136a577c14\"\r\n  };\r\n\r\n\r\n(0,firebase_app__WEBPACK_IMPORTED_MODULE_0__.initializeApp)(firebaseConfig)\r\n const db = (0,firebase_firestore__WEBPACK_IMPORTED_MODULE_1__.getFirestore)() \r\nconst estateAccount = document.getElementById('estate-account')\r\nconst colRefEstate = (0,firebase_firestore__WEBPACK_IMPORTED_MODULE_1__.collection)(db, 'estateAccounts')\r\n\r\nestateAccount.addEventListener('submit', e => {\r\n    e.preventDefault()\r\n\r\n    ;(0,firebase_firestore__WEBPACK_IMPORTED_MODULE_1__.addDoc)(colRefEstate, {\r\n        accountType: 'estate',\r\n        nameOfEstate: estateAccount.nameOfEstate.value,\r\n        motherMaidianName: estateAccount.motherMaidianName.value,\r\n        gender: estateAccount.gender.value,\r\n        dateOfBirth: estateAccount.dateOfBirth.value,\r\n        state: estateAccount.state.value,\r\n        localgovernment: estateAccount.localgovernment.value,\r\n        citizenship: estateAccount.citizenship.value,\r\n        country: estateAccount.country.value,\r\n        address: estateAccount.address.value,\r\n        adminstatorName: estateAccount.adminstatorName.value,\r\n        adminstatorRelationship: estateAccount.adminstatorRelationship.value,\r\n        mailingAddress: estateAccount.mailingAddress.value,\r\n        nameOfBank: estateAccount.nameOfBank.value,\r\n        phoneNumber: estateAccount.phoneNumber.value,\r\n        BVN: estateAccount.BVN.value,\r\n        dataOfAccountCreation: estateAccount.dataOfAccountCreation.value,\r\n        bankAccountNumber: estateAccount.bankAccountNumber.value,\r\n     \r\n    }).then ( e => {\r\n        estateAccount.reset()\r\n\r\n    })\r\n\r\n  \r\n})\r\n\r\n\r\n\n\n//# sourceURL=webpack://final-smatrade/./src/js/estate.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var firebase_app__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! firebase/app */ \"./node_modules/firebase/app/dist/esm/index.esm.js\");\n/* harmony import */ var firebase_firestore__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! firebase/firestore */ \"./node_modules/firebase/firestore/dist/esm/index.esm.js\");\n/* harmony import */ var firebase_storage__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! firebase/storage */ \"./node_modules/firebase/storage/dist/esm/index.esm.js\");\n\r\n\r\n\r\n\r\n\r\n\r\n\r\nconst firebaseConfig = {\r\n    apiKey: \"AIzaSyDXWNrFVg08GICClhqHiA69P2zPD1-4tKo\",\r\n    authDomain: \"smatrade-db.firebaseapp.com\",\r\n    projectId: \"smatrade-db\",\r\n    storageBucket: \"smatrade-db.appspot.com\",\r\n    messagingSenderId: \"650758148477\",\r\n    appId: \"1:650758148477:web:046c0579db78136a577c14\"\r\n  };\r\n\r\n(0,firebase_app__WEBPACK_IMPORTED_MODULE_0__.initializeApp)(firebaseConfig)\r\nconst db = (0,firebase_firestore__WEBPACK_IMPORTED_MODULE_1__.getFirestore)()\r\n\r\n\r\n\r\n// email list \r\nconst colRefEmailList = (0,firebase_firestore__WEBPACK_IMPORTED_MODULE_1__.collection)(db, 'emailList')\r\nconst subscribe = document.getElementById('email-subscribe')\r\nconst subscribeBtn = document.getElementById('submit-btn')\r\n\r\n\r\nsubscribe.addEventListener('submit', e => {\r\n    e.preventDefault()\r\n\r\n\r\n    ;(0,firebase_firestore__WEBPACK_IMPORTED_MODULE_1__.addDoc)(colRefEmailList, {\r\n        emailAddress: subscribe.emailSubscribe.value\r\n     \r\n    }).then ( e => {\r\n        subscribe.reset()\r\n\r\n    })\r\n\r\n  \r\n})\n\n//# sourceURL=webpack://final-smatrade/./src/js/mailingList.js?");
 
 /***/ }),
 
@@ -212,7 +212,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module can't be inlined because the eval devtool is used.
-/******/ 	var __webpack_exports__ = __webpack_require__("./src/js/estate.js");
+/******/ 	var __webpack_exports__ = __webpack_require__("./src/js/mailingList.js");
 /******/ 	
 /******/ })()
 ;
