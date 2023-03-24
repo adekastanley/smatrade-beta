@@ -159,6 +159,7 @@
   .top-section {
     padding: 2rem;
   }
+
   .section-3 {
     padding: 0 3rem;
   }
@@ -394,8 +395,14 @@
   /* .live-data {
     display: flex;
   } */
-  .clock-img-container {
+  /* .clock-img-container {
     display: none;
+  } */
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .section-2 .live-data {
+    padding: 0 1rem;
   }
 }
 
