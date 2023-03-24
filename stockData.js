@@ -29,3 +29,21 @@ getStockPrice(['META', 'GOOG','MSFT','NKE','TSLA','ADS']).then(
 
     }
 )
+
+
+// const puppeteer = require("puppeteer");
+
+// (async ()=> {
+//     const browser = await puppeteer.launch({headless: false});
+//     const page = await browser.newPage();
+//     await page.goto('https://ngxgroup.com/exchange/data/equities-price-list/');
+//     // await page.screenshot({path: "mywebsite.png"});
+//     const getPara =  await page.evaluate( ()=> {
+//         const pgTag = document.querySelector('#ngx_equities_trading_statistics')
+
+//         return pgTag.innerHTML
+//     });
+//     console.log(getPara)  
+//     await browser.close();
+// })();
+{/* <tbody id="ngx_equities_trading_statistics"></tbody> */}
